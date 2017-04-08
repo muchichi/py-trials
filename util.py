@@ -5,13 +5,15 @@ def main():
     check_palindromes('Never Odd or Even')
     check_palindromes('Madam, I''m Adam')
 
-def check_palindromes(word):   
-    mid,half,rest = 0,'',''
-    pal = word.lower()
-    print(pal)
+def clean_text(text):
+    pal = text.lower()
     punctuations = [' ',',','!','?',';','.','e']
     for x in list(punctuations):
         pal.replace(x,'')
+    
+
+def check_palindromes(pal):   
+    mid,half,rest = 0,'',''
     x = int(len(pal))
     if(x%2 > 0):
         mid = (x//2) - 1
