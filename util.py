@@ -6,6 +6,7 @@ def main():
     check_palindromes('Never Odd or Even')
     #check_palindromes('Madam, I''m Adam')
     simple_pali('Never Odd or Even')
+    one_line_palindrom_check('Never Odd or Even')
 
 def clean_text(text):
     pal = text.lower().strip()
@@ -26,14 +27,15 @@ def check_palindromes(word):
     print('First part: \'{}\' Second part: \'{}\''.format(half,rest))
     print(half.replace(' ','') == rest.replace(' ',''))
     
-def simple_pali(word):
+def semi_simple_pali(word):
     pal = clean_text(word)
     if(pal[::] == pal[::-1]):
        print('We got palindrom >> {}'.format(pal[::]))
     else:
        print('Not at all >> {}'.format(pal[::-1]))
-        
-        
+
+def one_line_palindrom_check(phrase):     
+    print(phrase.lower().strip().replace(' ','')[::] == phrase.lower().strip().replace(' ','')[::-1])    
         
     
 if __name__=='__main__': main()
