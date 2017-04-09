@@ -1,4 +1,5 @@
 #Never odd or even
+#Madam, I''m Adam
 
 def main():
     #print('Palindroms')
@@ -8,10 +9,7 @@ def main():
 
 def clean_text(text):
     pal = text.lower().strip()
-    #punctuations = [' ,,!,\',;,:]
-    #pal.translate(None, str.punctuation)
-    pal.replace(' ','')
-    return pal
+    return pal.replace(' ','')
     
 
 def check_palindromes(word):   
@@ -30,10 +28,10 @@ def check_palindromes(word):
     
 def simple_pali(word):
     pal = clean_text(word)
-    if(pal[::].replace(' ','') == pal[::-1].replace(' ','')):
+    if(pal[::] == pal[::-1]):
        print('We got palindrom >> {}'.format(pal[::]))
     else:
-       print('Not at all >> {}'.format(pal[::-1].replace(' ','')))
+       print('Not at all >> {}'.format(pal[::-1]))
         
         
         
