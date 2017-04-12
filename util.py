@@ -5,7 +5,7 @@ def main():
     #print('Palindroms')
     check_palindromes('Never Odd or Even')
     #check_palindromes('Madam, I''m Adam')
-    simple_pali('Never Odd or Even')
+    semi_simple_pali('Never Odd or Even')
     one_line_palindrom_check('Never Odd or Even')
 
 def clean_text(text):
