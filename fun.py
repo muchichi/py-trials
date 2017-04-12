@@ -8,8 +8,8 @@ def turtleI():
     color('blue','blue')
     begin_fill()
     while True:
-        forward(300)
-        left(210)
+        forward(150)
+        left(123)
         if abs(pos()) < 2:
             break
         end_fill()
@@ -20,7 +20,7 @@ def star():
     #st = turtle.Turtle()
     for i in range(5):
         forward(200)
-        right(144)
+        right(130)
         
     done()
     
