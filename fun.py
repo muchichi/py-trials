@@ -1,11 +1,28 @@
-import turtle
+from turtle import *
 
-color('red','blue')
-begin_fill()
-while True:
-    forward(200)
-    left(170)
-    if abs(pos()) < 1:
-        break
-    end_fill()
+def main():
+    #turtleI()
+    star()
+
+def turtleI():
+    color('blue','blue')
+    begin_fill()
+    while True:
+        forward(300)
+        left(210)
+        if abs(pos()) < 2:
+            break
+        end_fill()
     done()
+    
+def star():
+    color('red','white')
+    #st = turtle.Turtle()
+    for i in range(5):
+        forward(200)
+        right(144)
+        
+    done()
+    
+    
+if __name__ == '__main__': main()
